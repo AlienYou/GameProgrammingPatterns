@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour
+namespace Patterns.Prototype
 {
-    public ICopyable iCopy;
-
-    public Enemy SpawnEnemy(Enemy prototype)
+    public class EnemySpawner : MonoBehaviour
     {
-        return (Enemy)prototype.Copy();
+        public ICopyable iCopy;
+
+        public Enemy SpawnEnemy(Enemy prototype)
+        {
+            return (Enemy)prototype.Copy();
+        }
     }
 }

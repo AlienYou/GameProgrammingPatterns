@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Drone : Enemy
+namespace Patterns.Prototype
 {
-    public void Fly()
+    public class Drone : Enemy
     {
-        //Do Something
-    }
+        public void Fly()
+        {
+            //Do Something
+        }
 
-    public void Fire()
-    {
-        //Do Something
+        public void Fire()
+        {
+            //Do Something
+        }
     }
 }

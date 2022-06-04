@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sniper : Enemy 
+namespace Patterns.Prototype
 {
-    public void Shoot()
+    public class Sniper : Enemy
     {
-        //Do Something
+        public void Shoot()
+        {
+            //Do Something
+        }
     }
 }

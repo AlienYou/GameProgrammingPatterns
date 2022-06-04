@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface ICopyable
+namespace Patterns.Prototype
 {
-    ICopyable Copy();
+    public interface ICopyable
+    {
+        ICopyable Copy();
+    }
 }
 
